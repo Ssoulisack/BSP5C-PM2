@@ -43,6 +43,8 @@ async function getApi(){
         // javaScript [DOM]
         document.getElementById('time').innerText = res.time.updated
 
+        document.getElementById('usd').innerText = res.bpi.USD.rate_float
+        document.getElementById('eur').innerText = res.bpi.EUR.rate_float
     } catch (error) {
         console.error(error)
     }
